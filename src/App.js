@@ -19,10 +19,14 @@ function App() {
     }
   };
 
+  const addFeedback = (feedback) => {
+    console.log(feedback);
+  };
+
   return (
     <>
       <Header />
-      <FeedbackForm />
+      <FeedbackForm handleAdd={addFeedback} />
       <FeedbackStats feedback={feedback} />
       <FeedbackList feedback={feedback} handleDelete={deleteFeedback} />
     </>
