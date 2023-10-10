@@ -2,7 +2,7 @@ import React from "react";
 
 function RatingSelect({ select, selected }) {
   const handleChange = (e) => {
-    select(e.currentTarget.value);
+    select(+e.currentTarget.value);
   };
   return (
     <ul className="rating">
