@@ -16,7 +16,7 @@ function FeedbackForm() {
     }
   }, [feedbackEdit]);
 
-  const [text, setText] = useState();
+  const [text, setText] = useState("");
   const [rating, setRating] = useState(10);
   const [btnDisabled, setBtnDisabled] = useState(true);
   const [message, setMessage] = useState("");
