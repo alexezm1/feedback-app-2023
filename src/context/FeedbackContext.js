@@ -33,6 +33,7 @@ export const FeedbackProvider = ({ children }) => {
         item.id === id ? { ...item, ...updatedItem } : item
       )
     );
+    setFeedbackEdit({ item: {}, edit: false });
   };
 
   // Set item to be updated
